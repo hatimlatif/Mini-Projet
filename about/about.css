@@ -1,0 +1,75 @@
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(244, 244, 244, 1));
+}
+
+.btn-secondary {
+    color: #fff;
+    background: #383848;
+    margin-top: 2rem;
+}
+
+#about .title {
+    text-align: center;
+    margin-bottom: 4rem;
+
+}
+
+#about h2, #offers h2, #menu #title h2, #gallery h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#about h2, #menu #title h2 {
+    color: #383848;
+}
+
+#about .title p, #menu #title p {
+    font-size: 14px;
+    color: #9a9a9a;
+    font-weight: 600;
+}
+
+#about .about-content div {
+    opacity: 0;
+}
+
+#about .about-content div.show {
+    animation: slideUp 1s ease-out forwards;
+}
+
+#about .about-content {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.about-content img.show {
+    width: 400px;
+    border-radius: 10%;
+    animation: slideUp 1s ease-out forwards;
+}
+
+.about-content img {
+    width: 400px;
+    border-radius: 10%;
+    opacity: 0;
+}
+
+#about .about-content p {
+    color: #9a9a9a;
+    margin-right: 7rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    border-radius: 3%;
+
+}
+
+#about .about-content p strong {
+    color: #636262;
+}

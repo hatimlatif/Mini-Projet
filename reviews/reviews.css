@@ -1,0 +1,112 @@
+#temoignages {
+    background: url(background5.png) center/cover fixed;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: fit-content;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    gap: 25px;
+}
+
+.temoignage {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: auto;
+    scrollbar-width: none;
+    height: 100%;
+    width: 100%;
+
+}
+
+#temoignages h2 {
+    text-align: center;
+    color: #ff7200;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#temoignages .comment {
+    color: white;
+}
+
+.temoignage div img {
+    border-radius: 20%;
+    width: 150px;
+    height: 150px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 30px;
+    color: #ff7200;
+}
+
+.said.show, .ahmed.show, .abdellah.show, .yassine.show, .lahcen.show {
+    font-weight: bold;
+    font-size: 15px;
+    flex-shrink: 0.09;
+    margin: 0 15px 0 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 25%;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    animation: slideUp 1s ease-out forwards;
+}
+
+.said, .ahmed, .abdellah, .yassine, .lahcen {
+    font-weight: bold;
+    font-size: 15px;
+    flex-shrink: 0.09;
+    margin: 0 15px 0 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 25%;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 0;
+}
+
+.client {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.client:hover {
+    transform: scale(1.05);
+}
+
+#temoignages .btn {
+    background: #ff7200;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    padding: 0;
+}
+
+#tscroll-left, #tscroll-right {
+    background: #ff7200;
+    border-radius: 30px;
+    border: 0;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    font-size: 20px;
+}

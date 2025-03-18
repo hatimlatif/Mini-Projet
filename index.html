@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="logo.png" rel="icon" type="image/png">
+    <title>Fresh Only</title>
+    <link href="about/about.css" rel="stylesheet">
+    <link href="contact/contact.css" rel="stylesheet">
+    <link href="gallery/gallery.css" rel="stylesheet">
+    <link href="menu/menu.css" rel="stylesheet">
+    <link href="offers/offers.css" rel="stylesheet">
+    <link href="header/header.css" rel="stylesheet">
+    <link href="reviews/reviews.css" rel="stylesheet">
+    <link href="generalities.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+          rel="stylesheet"/>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const animatedElements = document.querySelectorAll("#img-gallery img, header .content,#menu .menu-item,.produits,.said, .ahmed, .abdellah, .yassine, .lahcen,.about-content img,#about .about-content div");
+
+        function checkScroll() {
+            animatedElements.forEach((el) => {
+                let position = el.getBoundingClientRect().top;
+                let screenHeight = window.innerHeight;
+
+                if (position < screenHeight - 100) {
+                    el.classList.add("show"); // Triggers animation
+                }
+            });
+        }
+
+        window.addEventListener("scroll", checkScroll);
+        checkScroll(); // Run on page load
+    });
+    </script>
+</head>
+<body>
+<!--Header Start-->
+<header>
+    <div id="navbar">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><img alt="Only Fresh" src="logo.png"></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <h1>Welcome to <span class="primary-text">Fresh Only</span> Bakery</h1>
+        <p>Here you can find the most delicious food in the world</p>
+        <a class="btn btn-primary" href="#menu">See Menu</a>
+    </div>
+</header>
+<!--Header End-->
+<main>
+    <!--About Start-->
+    <section id="about">
+        <div class="container">
+            <div class="title">
+                <h2>About Us</h2>
+                <p>More than 25 years of experience</p>
+            </div>
+            <div class="about-content">
+                <div>
+                    <p>Welcome to <strong>Fresh Only</strong>, where every bite is a taste of quality and tradition.
+                        Located in the heart of Agadir, we’re a family-owned bakery with a simple mission: to bring the
+                        freshest, most delicious baked goods to our community.</p>
+                    <p>At <strong>Fresh Only</strong>, we believe in the power of <strong>fresh ingredients</strong> and
+                        the art of baking. Every day, we craft our pastries, bread, and cakes with care, using
+                        locally-sourced ingredients to create treats that feel like home.</p>
+                    <p>Our bakery isn’t just about food—it’s about bringing people together. Whether you're stopping by
+                        for your morning bread, a special celebration cake, or just to enjoy a fresh pastry with a cup
+                        of coffee, we’re here to make your day a little sweeter.</p>
+                    <p>Thank you for supporting our bakery. We look forward to sharing our love of <strong>fresh
+                        handmade goods</strong>, with you.</p>
+                    <a class=" btn btn-secondary" href="#contact">Learn More</a>
+                </div>
+                <img alt="SHOP PHOTO" src="about/ABOUT.jpg">
+            </div>
+        </div>
+    </section>
+    <!--About End-->
+    <!--offers section start-->
+    <section id="offers">
+        <div class="container">
+            <div class="title">
+                <h2>Special Offers</h2>
+                <p id="countdown"></p>
+                <script>
+                    const countDownDate = new Date().getTime() + 60 * 1000;
+                    const x = setInterval(function () {
+                        let now = new Date().getTime();
+                        const distance = countDownDate - now;
+                        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                        document.getElementById("countdown").innerHTML = "Offer expires in: " + hours + "h " + minutes + "m " + seconds + "s";
+                        if (distance < 0) {
+                            clearInterval(x);
+                            document.getElementById("countdown").innerHTML = "Offer expired";
+                        }
+                    }, 1000);
+                </script>
+            </div>
+            <div class="offers-items">
+                <div class="produits">
+                    <img alt="produit1" src="offers/product1.jpg">
+                    <div>
+                        <h3><strong style="font-size: 17px"><u>Lemon shortbread</u></strong></h3>
+                        <h3>
+                            Coated with chocolate and
+                            feuilletine for maximum crunch 🤩🍋🍫
+                        </h3>
+                        <p>
+                            <del>55.00 MAD</del>
+                            <span class="primary-text">18.00 MAD</span></p>
+                    </div>
+                </div>
+
+                <div class="produits">
+                    <img alt="produit2" src="offers/product2.jpg">
+                    <div>
+                        <h3><strong style="font-size: 17px"><u>Sakia</u></strong></h3>
+                        <h3>
+                            White sesame seeds, almonds and
+                            pistachio heart 💚
+                        </h3>
+                        <p>
+                            <del>55.00 MAD</del>
+                            <span class="primary-text">18.00 MAD</span></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--offers section end-->
+    <!--Reviews Start-->
+    <section id="temoignages">
+        <h2>Temoignages</h2>
+        <div class='temoignage' id="temoignage">
+            <div class='said'>
+                <div class="client">
+                    <img alt="" src="reviews/said.jpg">
+                    <p class="name">Said</p>
+                </div>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p class="comment">Fresh Only is a real gem! The bread is always fresh and the pastries are delicious. A
+                    must for
+                    foodies!</p>
+            </div>
+            <div class="abdellah">
+                <div class="client">
+                    <img alt="" src='reviews/abdellah.jpg'>
+                    <p class="name">Abdellah</p>
+                </div>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p class="comment">A warm atmosphere and authentic flavors. I loved their melting croissants and their
+                    exquisite
+                    cakes. I highly recommend Fresh Only!</p>
+            </div>
+            <div class="ahmed">
+                <div class="client">
+                    <img alt="" src="reviews/ahmed.jpg">
+                    <p class="name">Ahmed</p>
+                </div>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p class="comment">Impeccable service and quality products. Every visit to Fresh Only is a real treat
+                    for the
+                    taste buds. Special mention for their eclairs!</p>
+            </div>
+            <div class="yassine">
+                <div class="client">
+                    <img alt="" src="reviews/yassine.jpg">
+                    <p class="name">Yassine</p>
+                </div>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p class="comment">Fresh Only's pastries are amazing! A slight downside to the wait sometimes, but it's
+                    really
+                    worth it!</p>
+            </div>
+            <div class="lahcen">
+                <div class="client">
+                    <img alt="" src="reviews/lahcen.jpg">
+                    <p class="name">Lahcen</p>
+                </div>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p class="comment">A delight from start to finish. The pastries are always fresh and tasty. Fresh Only
+                    has
+                    become my favorite bakery!</p>
+            </div>
+        </div>
+        <div class="scroll-btn">
+            <button id="tscroll-left"><</button>
+            <button id="tscroll-right">></button>
+            <script>
+                document.getElementById("tscroll-left").addEventListener("click", function () {
+                    document.getElementById("temoignage").scrollBy({
+                        left: -200,
+                        behavior: "smooth"
+                    });
+                });
+
+                document.getElementById("tscroll-right").addEventListener("click", function () {
+                    document.getElementById("temoignage").scrollBy({
+                        left: 200,
+                        behavior: "smooth"
+                    });
+                });
+            </script>
+        </div>
+    </section>
+    <!--Reviews End-->
+    <!--menu section start-->
+    <div id="back-ground">
+        <div id="menu">
+            <div id="container2">
+                <div id="title">
+                    <h2>Special Menu</h2>
+                    <p>Order one and get another for free</p>
+                </div>
+                <div id="menu-items">
+                    <div class="menu-item">
+                        <img alt="1" src="menu/product1.jpg">
+                        <p>Plataux des fours salé</p>
+                        <span class="primary-text">69.00 MAD</span>
+                    </div>
+                    <div class="menu-item">
+                        <img alt="2" src="menu/product2.jpg">
+                        <p>Individual pastry cake</p>
+                        <p><span class="primary-text">12.00 MAD</span></p>
+                    </div>
+                    <div class="menu-item">
+                        <img alt="3" src="menu/product3.jpg">
+                        <p>Slice of chocolate layer cake</p>
+                        <p><span class="primary-text">18.00 MAD</span></p>
+                    </div>
+                    <div class="menu-item">
+                        <img alt="4" src="menu/product4.jpg">
+                        <p>Gourmet mini nut cakes</p>
+                        <p><span class="primary-text">12.00 MAD</span></p>
+                    </div>
+                    <div class="menu-item">
+                        <img alt="5" src="menu/product5.jpg">
+                        <p>Almond & chocolate cake</p>
+                        <p><span class="primary-text">11.00 MAD</span></p>
+                    </div>
+                    <div class="menu-item">
+                        <img alt="6" src="menu/product6.jpg">
+                        <p>Assortiment de macarons</p>
+                        <p><span class="primary-text">50.00 MAD</span></p>
+                    </div>
+                    <div class="menu-item">
+                        <img alt="7" src="menu/product7.jpg">
+                        <p>Wholemeal crepe</p>
+                        <p><span class="primary-text">30.00 MAD</span></p>
+                    </div>
+                    <div class="menu-item">
+                        <img alt="8" src="menu/product8.jpg">
+                        <p>Seafood Pastilla</p>
+                        <p><span class="primary-text">49.00 MAD</span></p>
+                    </div>
+                </div>
+                <div class="scroll-btn">
+                    <button id="rscroll-left"><</button>
+                    <button id="rscroll-right">></button>
+                    <script>
+                        document.getElementById("rscroll-left").addEventListener("click", function () {
+                            document.getElementById("menu-items").scrollBy({
+                                left: -200,
+                                behavior: "smooth"
+                            });
+                        });
+
+                        document.getElementById("rscroll-right").addEventListener("click", function () {
+                            document.getElementById("menu-items").scrollBy({
+                                left: 200,
+                                behavior: "smooth"
+                            });
+                        });
+                    </script>
+                </div>
+                <button class="btn">Make an Order</button>
+            </div>
+        </div>
+    </div>
+    <!--menu section end-->
+    <!--Gallery start-->
+    <section id="gallery">
+        <div class="container">
+            <h2>Product Gallery</h2>
+            <div id="img-gallery">
+                <img alt="gallery1" onclick="openLightbox(this.src)" src="gallery/product1.jpg">
+                <img alt="gallery2" onclick="openLightbox(this.src)" src="gallery/product7.jpg">
+                <img alt="gallery3" onclick="openLightbox(this.src)" src="gallery/product4.jpg">
+                <img alt="gallery4" onclick="openLightbox(this.src)" src="gallery/product5.jpg">
+                <img alt="gallery5" onclick="openLightbox(this.src)" src="gallery/product6.jpg">
+                <img alt="gallery6" onclick="openLightbox(this.src)" src="gallery/product3.jpg">
+                <img alt="gallery8" onclick="openLightbox(this.src)" src="gallery/product8.jpg">
+                <img alt="gallery9" onclick="openLightbox(this.src)" src="gallery/1234.jpg">
+                <img alt="gallery10" onclick="openLightbox(this.src)" src="gallery/cheesecake.jpg">
+                <img alt="gallery11" onclick="openLightbox(this.src)" src="gallery/hrcha.jpg">
+                <img alt="gallery12" onclick="openLightbox(this.src)" src="gallery/msmn.jpg">
+                <img alt="gallery13" onclick="openLightbox(this.src)" src="gallery/vennoiserie.jpg">
+            </div>
+            <div class="scroll-btn">
+                <button id="gscroll-left"><</button>
+                <button id="gscroll-right">></button>
+                <script>
+                    document.getElementById("gscroll-left").addEventListener("click", function () {
+                        document.getElementById("img-gallery").scrollBy({
+                            left: -200,
+                            behavior: "smooth"
+                        });
+                    });
+
+                    document.getElementById("gscroll-right").addEventListener("click", function () {
+                        document.getElementById("img-gallery").scrollBy({
+                            left: 200,
+                            behavior: "smooth"
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+        <script>
+            function openLightbox(imageSrc) {
+                const lightbox = document.getElementById('lightbox');
+                const lightboxImg = document.querySelector('.lightbox-img');
+                lightboxImg.src = imageSrc;
+                lightbox.style.display = 'flex';
+            }
+
+            function closeLightbox() {
+                const lightbox = document.getElementById('lightbox');
+                lightbox.style.display = 'none';
+            }
+        </script>
+    </section>
+    <!--Gallery end-->
+    <!--contact start-->
+    <section id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div>
+                        <h3>ADDRESS</h3>
+                        <p><i class="fa-solid fa-location-dot"></i> Jet Sakane Bensergao Agadir, 6 October,
+                            Maroc</p>
+                        <p><i class="fa-solid fa-phone"></i> Phone: +212 658388566</p>
+                        <p><i class="fa-solid fa-envelope"></i> support@freshonly.com</p>
+                    </div>
+                    <div>
+                        <h3>WORKING HOURS</h3>
+                        <p>8:00 AM to 11:00 PM on weekdays</p>
+                        <p>10:00 AM to 12:00 PM on weekends</p>
+                    </div>
+                    <div>
+                        <h3>FOLLOW US</h3>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <form>
+                    <label><input id="Name" name="Name" placeholder="Full Name" required type="text"></label>
+                    <label><input id="email" name="email" placeholder="Email Address" required type="email"></label>
+                    <label><textarea cols="30" id="Message" name="Message" placeholder="Message"
+                                     rows="5"></textarea></label>
+                    <button class="btn" type="submit">SEND MESSAGE</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--contact end-->
+    <div class="lightbox" id="lightbox" style="display: none;">
+        <div class="lightbox-content">
+            <span class="close" onclick="closeLightbox()">×</span>
+            <img alt="Gallery Image" class="lightbox-img" src="">
+        </div>
+    </div>
+</main>
+<footer id="footer">
+    <p>Copyright &copy;2025 All rights reserved | Made by <b><a
+            href="youness-zarouali.html" target="_blank">Youness Zarouali</a> & Hatim Latif</b>
+    </p>
+</footer>
+</body>
+</html>

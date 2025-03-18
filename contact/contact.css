@@ -1,0 +1,104 @@
+#contact {
+    height: 60vh;
+    padding: 35px 0;
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact .container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+#contact .contact-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+    gap: 100px;
+}
+
+#contact .contact-content .contact-info {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#contact .contact-content .contact-info div {
+    line-height: 1.7;
+}
+
+#contact .contact-content .contact-info h3 {
+    font-size: 28px;
+    color: #383848;
+    margin-bottom: 10px;
+}
+
+#contact .contact-content .contact-info p {
+    color: #9a9a9a;
+}
+
+#contact .contact-content .contact-info .social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+#contact .contact-content .contact-info a i {
+    color: white;
+    background-color: #383848;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact .contact-content .contact-info a i:hover {
+    background: #ff7200;
+
+}
+
+form {
+    height: 100%;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form label {
+    width: 100%;
+}
+
+form input, textarea {
+    display: block;
+    width: 100%;
+    padding: 20px 15px;
+    margin: 0 0 20px 0;
+    border: none;
+    background-color: #faece5;
+    border-radius: 15px;
+}
+
+#contact form button {
+    background: #ff7200;
+    color: #fff;
+}
+
+#contact form button:hover {
+    background-color: #383848;
+    cursor: pointer;
+}
