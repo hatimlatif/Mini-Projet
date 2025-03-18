@@ -34,10 +34,12 @@
 }
 
 #about .about-content div {
+    height: 100%;
     opacity: 0;
 }
 
 #about .about-content div.show {
+    height: 100%;
     animation: slideUp 1s ease-out forwards;
 }
 
@@ -46,16 +48,19 @@
     justify-content: space-between;
     overflow-x: auto;
     scrollbar-width: none;
+    height: 100%;
 }
 
 .about-content img.show {
-    width: 400px;
+    height: 100%;
+    width: 30%;
     border-radius: 10%;
     animation: slideUp 1s ease-out forwards;
 }
 
 .about-content img {
-    width: 400px;
+    height: 30%;
+    width: auto;
     border-radius: 10%;
     opacity: 0;
 }
@@ -72,4 +77,8 @@
 
 #about .about-content p strong {
     color: #636262;
+}
+
+#about .container {
+    height: 100%;
 }
