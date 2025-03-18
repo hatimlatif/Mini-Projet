@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Youness Zarouali | Owner Of Fresh Only Bakery</title>
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+          referrerpolicy="no-referrer" rel="stylesheet"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Quicksand", serif;
+        }
+
+        /* nav bar start */
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            border-bottom: 1px solid gainsboro;
+        }
+
+        #navbar h2 {
+            cursor: pointer;
+            margin-left: 7rem;
+        }
+
+        #navbar ul {
+            display: flex;
+            margin-right: 100px;
+            margin-left: 100px;
+        }
+
+        #navbar ul li a {
+            padding: 15px 20px;
+            color: black;
+            font-weight: 600;
+        }
+
+        #navbar ul li a:hover {
+            border-bottom: 2px solid #ff7200;
+        }
+
+        /* nav bar end */
+        /* content start */
+        .content {
+            display: flex;
+
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+            margin-top: 9rem;
+        }
+
+        .content h3, .content h1, .content p {
+            margin: 10px;
+        }
+
+        .content h3 {
+            color: #383848;
+            font-size: 20px;
+        }
+
+        .content h1 {
+            color: #383848;
+            font-size: 50px;
+        }
+
+        .content p {
+            color: #383848;
+            font-size: 20px;;
+        }
+
+        .content p #fresh-only {
+            color: #ff7200;
+        }
+
+        .content p a i {
+            color: white;
+            background-color: #383848;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 20px;
+        }
+
+        .content p a i:hover {
+            background-color: #ff7200;
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translate(0, 0);
+            }
+            25% {
+                transform: translate(-2px, 2px);
+            }
+            50% {
+                transform: translate(2px, -2px);
+            }
+            75% {
+                transform: translate(-2px, -2px);
+            }
+            100% {
+                transform: translate(2px, 2px);
+            }
+        }
+
+        .content img {
+            width: 550px;
+            margin-left: 130px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+            animation: shake 5s infinite;
+        }
+        /* content end */
+    </style>
+</head>
+<body>
+<div id="navbar">
+    <h2>Youness Zarouali</h2>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="content">
+    <div>
+        <h3> Hi, I'm</h3>
+        <h1>Youness Zarouali </h1>
+        <p><b>owner of <a href="http://127.0.0.1:5500/web2.html#"><u>Fresh Only</u></a> Bakery</b></p>
+        <p><a href="#"><i class="fa-brands fa-whatsapp"></i></a> <b>+212 58388566</b></p>
+        <p><a href="#"><i class="fa-brands fa-instagram"></i></a><b> agadir-6666</b></p>
+    </div>
+    <img alt="SHOP PHOTO" src="about/ABOUT.jpg">
+</div>
+</body>
+</html>
