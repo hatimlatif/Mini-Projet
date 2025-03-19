@@ -45,6 +45,7 @@
 
 #gallery #img-gallery img:hover {
     opacity: 1;
+    cursor: pointer;
 }
 
 #gscroll-left, #gscroll-right {
