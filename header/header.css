@@ -6,12 +6,6 @@ a {
     text-decoration: none;
 }
 
-#about .container {
-    width: 80%;
-    margin: auto;
-
-}
-
 /*utility classes*/
 .primary-text {
     color: #ff7200;

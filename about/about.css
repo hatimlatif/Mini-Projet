@@ -10,6 +10,7 @@
     background-color: rgba(0, 0, 0, 0.8);
     padding: 30px;
     border-radius: 25px;
+    width: 70%;
 }
 
 .btn-secondary {
@@ -34,9 +35,10 @@
     font-size: 4rem;
 }
 
-#about .title p, #menu #title p {
+#about .title p, #menu #title p:nth-child(1){
     color: #9a9a9a;
     font-weight: 600;
+    font-size: 17.3px;
 }
 
 #about .about-content div {
