@@ -22,7 +22,7 @@ body, button, input, select, textarea {
 }
 
 .btn-primary:hover, .btn-secondary:hover {
-    background: #ff7200;
+    background: #383848;
 }
 
 #footer {
